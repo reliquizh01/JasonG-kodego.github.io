@@ -1,0 +1,42 @@
+.joinLinkBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 0px 0px;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.TageatsLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px 0px 0px;
+    font-weight: bold;
+    color: black;
+    font-size: larger;
+}
+
+.headerMesgForTheDay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px 0px 0px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+}
+
+.pictureSlides{
+    height: 50vh;
+    justify-content: center;
+    background-color: orange;
+    background-image: url("./Images/Title-Banner-WhatMakesYouHappy.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.restaurantWrapper{
+    overflow-x:scroll;
+}

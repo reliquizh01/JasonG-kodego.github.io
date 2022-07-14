@@ -25,46 +25,15 @@
     justify-content: center;
     background-color: orange;
     background-image: url("./Images/Title-Banner-WhatMakesYouHappy.jpg");
+}
+
+.pictureSlidesBackgroud{
+    background-image: url(./Images/Hawkers.jpg);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 .restaurantWrapper{
     overflow-x:scroll;
-}
-
-.searchBarMobile{
-    display: none;
-}
-
-.searchBarWideScreen{
-    display: block;
-}
-
-.tageatsLogoMobile{
-    display: none;
-}
-
-.tageatsLogoWideScreen{
-    display: block;
-}
-
-@media screen and (min-width:380px) and (max-width:443px) {
-    .tageatsLogoMobile{
-        display: block;
-    }
-}
-
-@media screen and (max-width:443px) {
-    .tageatsLogoWideScreen{
-        display: none;
-    }
-}
-@media screen and (max-width:990px) {
-    .searchBarMobile{
-        display: block;
-    }
-    .searchBarWideScreen{
-        display: none;
-    }
 }

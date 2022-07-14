@@ -9,6 +9,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./Home.css">
+    <link rel="stylesheet" href="./CustomNav.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -20,7 +21,7 @@
           <div class="searchBarMobile">
             <form class="d-flex " role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">🔍</button>
+              <button class="btn btn-outline-warning bg-warning" type="submit"><img src="./Images/search.svg" alt=""></button>
             </form>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +30,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item bg-success">
-                <a class="nav-link text-center" href="#">JOIN US!</a>
+                <a class="nav-link text-center" href="./Registration.html">JOIN US!</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,7 +51,7 @@
             <div class="searchBarWideScreen">
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-warning bg-dark" type="submit">Search</button>
               </form>
             </div>
           </div>
@@ -58,7 +59,7 @@
       </nav>
 
 
-    <div class="container-fluid h-100">
+    <div class="container-fluid h-100 pictureSlidesBackgroud">
         <!-- Header -->
         <div class="row bg-dark">
             <div class="col-sm-11 col-sm-2 col-12 bg-dark">
@@ -66,17 +67,18 @@
             </div>
         </div>
         <div class="container my-3">
-
             <div class="row flex-nowrap restaurantWrapper row-cols-md-3 row-cols-sm-2 row-cols-1 g-1">
-                    <div class="card">
+                    <div class="card border-warning mb-5">
                         <img src="https://placeimg.com/640/480/arch/sepia" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title text-center">Carinderia ng Bayan</h5>
                         <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-warning text-center">Order</a>
+                        <div class="cardButtonCenter">
+                          <a href="#" class="btn btn-warning text-center">Order</a>
+                        </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card border-warning mb-5">
                         <img src="https://placeimg.com/640/480/arch/grayscale" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title text-center">Ate Nina's Eatery</h5>
@@ -84,7 +86,7 @@
                         <a href="#" class="btn btn-warning text-center">Order</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card border-warning mb-5">
                         <img src="https://placeimg.com/640/480/arch/arch/sepia" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title text-center">Mang Kornel's Snackbar</h5>
@@ -92,12 +94,12 @@
                         <a href="#" class="btn btn-warning text-center">Order</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card border-warning mb-5">
                         <img src="https://placeimg.com/640/480/arch/arch/sepia" class="card-img-top" alt="...">
                         <div class="card-body">
                         <h5 class="card-title text-center">The Food Palaz</h5>
                         <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-warning text-center">Order</a>
+                          <a href="#" class="btn btn-warning text-center">Order</a>
                         </div>
                     </div>
             </div>

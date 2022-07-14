@@ -1,0 +1,39 @@
+.searchBarMobile{
+    display: none;
+}
+
+.searchBarWideScreen{
+    display: block;
+}
+
+.tageatsLogoMobile{
+    display: none;
+}
+
+.tageatsLogoWideScreen{
+    display: block;
+}
+
+.cardButtonCenter{
+    display: flex;
+    
+}
+@media screen and (min-width:380px) and (max-width:443px) {
+    .tageatsLogoMobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width:443px) {
+    .tageatsLogoWideScreen{
+        display: none;
+    }
+}
+@media screen and (max-width:990px) {
+    .searchBarMobile{
+        display: block;
+    }
+    .searchBarWideScreen{
+        display: none;
+    }
+}

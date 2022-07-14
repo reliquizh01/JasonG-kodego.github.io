@@ -8,15 +8,7 @@
     color: white;
 }
 
-.TageatsLogo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0px 0px 0px;
-    font-weight: bold;
-    color: black;
-    font-size: larger;
-}
+
 
 .headerMesgForTheDay{
     display: flex;
@@ -29,7 +21,7 @@
 }
 
 .pictureSlides{
-    height: 50vh;
+    height: 25vh;
     justify-content: center;
     background-color: orange;
     background-image: url("./Images/Title-Banner-WhatMakesYouHappy.jpg");
@@ -39,4 +31,40 @@
 
 .restaurantWrapper{
     overflow-x:scroll;
+}
+
+.searchBarMobile{
+    display: none;
+}
+
+.searchBarWideScreen{
+    display: block;
+}
+
+.tageatsLogoMobile{
+    display: none;
+}
+
+.tageatsLogoWideScreen{
+    display: block;
+}
+
+@media screen and (min-width:380px) and (max-width:443px) {
+    .tageatsLogoMobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width:443px) {
+    .tageatsLogoWideScreen{
+        display: none;
+    }
+}
+@media screen and (max-width:990px) {
+    .searchBarMobile{
+        display: block;
+    }
+    .searchBarWideScreen{
+        display: none;
+    }
 }

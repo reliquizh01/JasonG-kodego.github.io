@@ -13,15 +13,21 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand text-center bg-warning" href="#">TAGEATS</a>
+          <!-- <a class="navbar-brand text-center bg-warning" href="#">TAGEATS</a> -->
+          <a class="navbar-brand text-center bg-success tageatsLogoWideScreen"> TAGEATS! </a>
+          <a class="navbar-brand text-center bg-success tageatsLogoMobile"> T! </a>
+          <!-- Searchbar Mobile Version -->
+          <div class="searchBarMobile">
+            <form class="d-flex " role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">🔍</button>
+            </form>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-center" aria-current="page" href="#">Home</a>
-              </li>
               <li class="nav-item bg-success">
                 <a class="nav-link text-center" href="#">JOIN US!</a>
               </li>
@@ -40,10 +46,13 @@
                 <a class="nav-link disabled text-center">Disabled</a>
               </li> -->
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <!-- Searchbar WideScreen -->
+            <div class="searchBarWideScreen">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
           </div>
         </div>
       </nav>
@@ -53,10 +62,8 @@
         <!-- Header -->
         <div class="row bg-dark">
             <div class="col-sm-11 col-sm-2 col-12 bg-dark">
-                <p class="headerMesgForTheDay">Supporting your local restaurants with one click away!</p>
+                <p class="headerMesgForTheDay">Your Local Cravings, One Click Away!</p>
             </div>
-        </div>
-        <div class="pictureSlides">    
         </div>
         <div class="container my-3">
 
@@ -66,7 +73,7 @@
                         <div class="card-body">
                         <h5 class="card-title text-center">Carinderia ng Bayan</h5>
                         <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary text-center">Order</a>
+                        <a href="#" class="btn btn-warning text-center">Order</a>
                         </div>
                     </div>
                     <div class="card">
@@ -74,7 +81,7 @@
                         <div class="card-body">
                         <h5 class="card-title text-center">Ate Nina's Eatery</h5>
                         <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Order</a>
+                        <a href="#" class="btn btn-warning text-center">Order</a>
                         </div>
                     </div>
                     <div class="card">
@@ -82,7 +89,7 @@
                         <div class="card-body">
                         <h5 class="card-title text-center">Mang Kornel's Snackbar</h5>
                         <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary text-center">Order</a>
+                        <a href="#" class="btn btn-warning text-center">Order</a>
                         </div>
                     </div>
                     <div class="card">
@@ -90,7 +97,7 @@
                         <div class="card-body">
                         <h5 class="card-title text-center">The Food Palaz</h5>
                         <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary text-center">Order</a>
+                        <a href="#" class="btn btn-warning text-center">Order</a>
                         </div>
                     </div>
             </div>

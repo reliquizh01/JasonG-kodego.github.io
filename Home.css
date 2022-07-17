@@ -9,6 +9,10 @@
 }
 
 
+.cardButtonCenter{
+    justify-content: center;
+    align-items: center;
+}
 
 .headerMesgForTheDay{
     display: flex;

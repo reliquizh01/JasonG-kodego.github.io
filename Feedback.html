@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is TAGEATS</title>
+    <title>Send Us a Feedback</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./CustomNav.css">
-    <link rel="stylesheet" href="./AboutUs.css">
+    <link rel="stylesheet" href="./Feedback.css">
 </head>
-<body class="bg-warning">
+<body class="bg-success">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <!-- <a class="navbar-brand text-center bg-warning" href="#">TAGEATS</a> -->
-          <a class="navbar-brand text-center bg-warning tageatsLogoWideScreen" href="./AboutUs.html"> TAGEATS! </a>
+          <a class="navbar-brand text-center bg-success tageatsLogoWideScreen" href="./AboutUs.html"> TAGEATS! </a>
           <a class="navbar-brand text-center bg-success tageatsLogoMobile"> T! </a>
           <!-- Searchbar Mobile Version -->
           <div class="searchBarMobile">
@@ -39,7 +39,7 @@
                   More
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item text-center" href="./Feedback.html">Send Feedback</a></li>
+                  <li><a class="dropdown-item text-center text-warning bg-dark" href="#">Send Feedback</a></li>
                   <li><a class="dropdown-item text-center" href="#">Favorite Restaurants</a></li>
                   <li><hr class="dropdown-divider text-center"></li>
                   <li><a class="dropdown-item text-center" href="#">Surprise Me!</a></li>
@@ -59,19 +59,41 @@
           </div>
         </div>
       </nav>
-      <div class="container-fluid my-3">
-        <div class="row bg-dark text-white text-center">
-          <h1>ABOUT US</h1>
-          <p class="paragraphAboutUs my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione natus perspiciatis excepturi reiciendis mollitia atque tenetur architecto autem distinctio libero accusamus cupiditate sed et amet provident, unde quibusdam iure quidem?</p>
-        </div>
-        <div class="row bg-dark text-white text-center">
-          <h1>MISSION</h1>
-          <p class="paragraphAboutUs my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione natus perspiciatis excepturi reiciendis mollitia atque tenetur architecto autem distinctio libero accusamus cupiditate sed et amet provident, unde quibusdam iure quidem?</p>
-        </div>
-        <div class="row bg-dark text-white text-center">
-          <h1>VISION</h1>
-          <p class="paragraphAboutUs my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione natus perspiciatis excepturi reiciendis mollitia atque tenetur architecto autem distinctio libero accusamus cupiditate sed et amet provident, unde quibusdam iure quidem?</p>
-        </div>
+      <div class="container">
+        <form action="">
+            <div class="row bg-success text-white text-center">
+              <h1>HELP US IMPROVE!</h1>
+            </div>
+            <div class="container-lg vertical-center bg-dark text-white">
+                <!-- LABEL FOR FCT -->
+                <div class="row text-center">
+                    <h3>What can we help you with?</h3>
+                </div>
+                <!-- FREQUENTLY CONCERNED TOPICS -->
+                <div class="row feedback-Custom">
+                    <select name="Frequent Concern" id="frequentConcernSelection">
+                        <option class="text-center"selected disabled>Select your concern</option>
+                        <option class="text-center"value="websiteTooSlow">Website too slow</option>
+                        <option class="text-center"value="restaurantIssues">Restaurant Issues</option>
+                        <option class="text-center"value="Discounts Didnt Apply">Discounts Didn't Apply</option>
+                        <option class="text-center"value="OtherConcerns">Other Concerns</option>
+                    </select>
+                </div>
+                <!-- MESSAGE ABOUT US -->
+                <div class="row">
+                    <h3 for="messageConcern" class="text-center my-3">Tell us about it</h3>
+                    <div class="feedback-MessageBox-Custom bg-warning">
+                        <textarea class="feedback-Message-Custom" name="messageConcern" id="">I want to inquire about...</textarea>
+                    </div>
+                        
+                    </textarea>
+                </div>
+                <!-- SUBMIT BUTTON -->
+                <div class="row my-5 feedback-Custom">
+                    <input type="submit" name="submitBtn" value="Submit">
+                </div>
+            </div>
+        </form>
       </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

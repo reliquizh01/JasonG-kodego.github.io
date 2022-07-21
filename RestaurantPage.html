@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CustomNav.css">
+
+</head>
+<body class="bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand text-center bg-warning" href="#">TAGEATS</a> -->
+          <a class="navbar-brand text-center bg-success tageatsLogoWideScreen" href="./AboutUs.html"> TAGEATS! </a>
+          <a class="navbar-brand text-center bg-success tageatsLogoMobile"> T! </a>
+          <!-- Searchbar Mobile Version -->
+          <div class="searchBarMobile">
+            <form class="d-flex " role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-warning bg-warning" type="submit"><img src="./Images/search.svg" alt=""></button>
+            </form>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item bg-success">
+                <a class="nav-link text-center" href="./Registration.html">JOIN US!</a>
+              </li>
+              <li class="nav-item bg-warning">
+                <a class="nav-link text-center text-black" href="./Home.html">ORDER NOW!</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center" href="./Feedback.html">Send Feedback</a></li>
+                  <li><a class="dropdown-item text-center" href="#">Favorite Restaurants</a></li>
+                  <li><hr class="dropdown-divider text-center"></li>
+                  <li><a class="dropdown-item text-center" href="#">Surprise Me!</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled text-center">Disabled</a>
+              </li> -->
+            </ul>
+            <!-- Searchbar WideScreen -->
+            <div class="searchBarWideScreen">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning bg-dark" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <!-- Restaurant Profile Picture -->
+        <div class="row">
+            <div class="row-cols-sm-5 d-flex justify-content-center">
+                <div class="card border-dark my-3 bg-dark">
+                    <img src="https://placeimg.com/640/480/arch/grayscale" class="card-img-top" alt="...">
+                    <h3 class="card-title text-center text-white">Ate Nina's Eatery</h3>                    
+                </div>
+            </div>
+        </div>
+        <div class="mh-100 my-3">
+            <!-- Restaurant Body-->
+             <div class="row d-flex justify-content-center bg-dark">
+                <!-- Left Advertisement -->
+                <div class="col-3 bg-dark" id="LeftRestoAdvertisement">
+                    <h1 class="text-center text-white">ADS HERE</h1>
+                </div>
+                <!-- Restaurant Menu -->
+                <div class="col-6 bg-white" id="restaurantsMenu">
+                    <h1 class="text-center text-black">MENU HERE</h1>
+                    <div class="flex-nowrap menuWrapper">
+                        <div class="row mb-5">
+                            <div class="col-5">
+                                <img src="./Images/foodPlaceholder1.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="col-5">
+                                <h2>Mechado <a class="text-warning">(SPECIALTY)</a></h2>
+                                <h5 class="text-truncate">Mechado is a braised beef dish originating from the Philippines inspired by culinary methods of Spain, which it was a former colony of. Soy sauce and calamansi fruits are key ingredients to the braising liquid.</h5>
+                                
+                                <h4>Vegetables</h4>
+                                <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+                                <h4>Meat</h4>
+                                <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+                                <h4>Sarsa</h4>
+                                <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <p>
+                                    <button class="bg-success text-white">[ + ]</button>
+                                </p>
+                                <p>
+                                    <button class="bg-danger text-white">[ -  ]</button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-5">
+                                <img src="./Images/foodPlaceholder2.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="col-5">
+                                <h2>Adobo</h2>
+                                <h5 class="text-truncate">Philippine adobo is a popular Filipino dish and cooking process in Philippine cuisine that involves meat, seafood, or vegetables marinated in vinegar, soy sauce, garlic, bay leaves, and black peppercorns, which is browned in oil, and simmered in the marinade</h5>
+                                
+                                <h4>Vegetables</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+                                <h4>Meat</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+                                <h4>Sarsa</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <p>
+                                    <button class="bg-success text-white">[ + ]</button>
+                                </p>
+                                <p>
+                                    <button class="bg-danger text-white">[ -  ]</button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-5">
+                                <img src="./Images/foodPlaceholder1.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="col-5">
+                                <h2>Mechado</h2>
+                                <h5 class="text-truncate">Mechado is a braised beef dish originating from the Philippines inspired by culinary methods of Spain, which it was a former colony of. Soy sauce and calamansi fruits are key ingredients to the braising liquid.</h5>
+                                
+                                <h4>Vegetables</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+                                <h4>Meat</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+                                <h4>Sarsa</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <p>
+                                    <button class="bg-success text-white">[ + ]</button>
+                                </p>
+                                <p>
+                                    <button class="bg-danger text-white">[ -  ]</button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-5">
+                                <img src="./Images/foodPlaceholder2.jpg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="col-5">
+                                <h2>Adobo</h2>
+                                <h5 class="text-truncate">Philippine adobo is a popular Filipino dish and cooking process in Philippine cuisine that involves meat, seafood, or vegetables marinated in vinegar, soy sauce, garlic, bay leaves, and black peppercorns, which is browned in oil, and simmered in the marinade</h5>
+                                
+                                <h4>Vegetables</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+                                <h4>Meat</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+                                <h4>Sarsa</h4>
+                                <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <p>
+                                    <button class="bg-success text-white">[ + ]</button>
+                                </p>
+                                <p>
+                                    <button class="bg-danger text-white">[ -  ]</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Advertisement -->
+                <div class="col-3 bg-dark" id="RightRestoAdvertisement">
+                    <h1 class="text-center text-white">ADS HERE</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./RestaurantPage.js"></script>
+</body>
+</html>

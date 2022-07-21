@@ -1,0 +1,19 @@
+body{
+    margin: 0%;
+}
+
+.restaurantProfilePicture{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurantFoodMenu{
+    width: 320px;
+    height: 240px;
+}
+
+.menuWrapper{
+    overflow-y:scroll;
+}

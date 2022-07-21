@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./CustomNav.css">
     <link rel="stylesheet" href="./Feedback.css">
 </head>
-<body class="bg-success">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="container-fluid">
+    <nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <!-- <a class="navbar-brand text-center bg-warning" href="#">TAGEATS</a> -->
           <a class="navbar-brand text-center bg-success tageatsLogoWideScreen" href="./AboutUs.html"> TAGEATS! </a>
@@ -59,14 +59,14 @@
           </div>
         </div>
       </nav>
-      <div class="container">
+      <div class="d-flex justify-content-sm-center my-5">
         <form action="">
             <div class="row bg-success text-white text-center">
               <h1>HELP US IMPROVE!</h1>
             </div>
-            <div class="container-lg vertical-center bg-dark text-white">
+            <div class="row justify-content-center bg-dark text-white">
                 <!-- LABEL FOR FCT -->
-                <div class="row text-center">
+                <div class="row text-center my-2">
                     <h3>What can we help you with?</h3>
                 </div>
                 <!-- FREQUENTLY CONCERNED TOPICS -->
@@ -81,12 +81,12 @@
                 </div>
                 <!-- MESSAGE ABOUT US -->
                 <div class="row">
-                    <h3 for="messageConcern" class="text-center my-3">Tell us about it</h3>
-                    <div class="feedback-MessageBox-Custom bg-warning">
-                        <textarea class="feedback-Message-Custom" name="messageConcern" id="">I want to inquire about...</textarea>
-                    </div>
+                  <h3 for="messageConcern" class="text-center my-3">Tell us about it</h3>
+                  <div class="feedback-MessageBox-Custom bg-warning">
+                      <textarea class="feedback-Message-Custom" name="messageConcern" id="" placeholder="Message here..."></textarea>
                         
-                    </textarea>
+                      </textarea>
+                  </div>
                 </div>
                 <!-- SUBMIT BUTTON -->
                 <div class="row my-5 feedback-Custom">

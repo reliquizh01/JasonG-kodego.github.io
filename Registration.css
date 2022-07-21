@@ -6,3 +6,27 @@
     background-color: cornflowerblue;
     color: white;
 }
+
+.registrationFormBackground{
+    display: flex;
+    height: 50vh;
+    background-image: url(./Images/eatingFilipino.jpg);
+}
+
+.EatOwnerForm{
+    display: none;
+    visibility: hidden;
+}
+
+.TagOrderForm{
+    display: none;
+    visibility: hidden;
+}
+
+.TagOrderFormMobile{
+    display: none;
+}
+
+.EatOwnerFormMobile{
+    display: none;
+}

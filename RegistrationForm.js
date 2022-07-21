@@ -12,13 +12,13 @@ let mEOForm = document.getElementById("EatOwnerFormMobile");
 
 
 //Obtain width of Screen [768]
-let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+let screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
 mTGForm.style.display = "none";
 mEOForm.style.display = "none";
 
 // PC Screen
-if(width > 1000){
+if(screenWidth > 1000){
     tGForm.style.display = "block";
     eOForm.style.display = "block";
 
@@ -33,8 +33,9 @@ else{
 }
 
 const ShowTgForm = () =>{
+    screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // PC Screen
-    if(width > 1000)
+    if(screenWidth > 1000)
     {
         if(tGForm.style.visibility == "visible")
         {
@@ -63,8 +64,10 @@ const ShowTgForm = () =>{
 };
 
 const ShowEoForm = () =>{
+    screenWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
     // PC Screen
-    if(width > 1000)
+    if(screenWidth > 1000)
     {
         if(eOForm.style.visibility == "visible"){
             eOForm.style.visibility = "hidden";

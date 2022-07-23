@@ -1,3 +1,11 @@
+body{
+    margin: 0%;
+    
+}
+
+footer{
+    margin: 0%;
+}
 .joinLinkBtn{
     display: flex;
     justify-content: center;
@@ -8,36 +16,84 @@
     color: white;
 }
 
-
-.cardButtonCenter{
-    justify-content: center;
-    align-items: center;
+.carousel{
+    background-color: grey;
 }
 
-.headerMesgForTheDay{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 0px 0px 0px;
+.carousel-item{
+    height: 32rem;
+    padding: 2em;
+    background-color: grey;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.carousel-item-container{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom: 50px;
+    margin-left: 10px;
+}
+
+.carousel-item-container:hover{
+    text-decoration: underline;
+}
+
+.carousel-item-header{
     font-weight: bold;
-    color: white;
     font-style: italic;
+    color: white;
 }
 
-.pictureSlides{
-    height: 25vh;
+.promotion-banner{
+    color: #343434;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #FFD100;
+    -webkit-text-stroke: 1px black;
+    font-size: large;;
+}
+
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left:0;
+    right: 0;
+    opacity: 1;
+    background-color: black;
+}
+
+.restaurantContainer{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.restaurantItem{
+    align-items: center;
     justify-content: center;
-    background-color: orange;
-    background-image: url("./Images/Title-Banner-WhatMakesYouHappy.jpg");
+    
+    height: 210px;
+    width: 180px;
 }
 
-.pictureSlidesBackgroud{
-    background-image: url(./Images/Hawkers.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+.restaurantItem .RestoInfo{
+    display: flexbox;
+    max-width:160px;   
+    line-height: 50%;
+    overflow: hidden;
 }
 
-.restaurantWrapper{
-    overflow-x:scroll;
+.restaurantItem .RestoPromo{
+    line-height: 100%;
+    background-color: #FFF2A6;
+    opacity: 0.75;
+}
+
+.restaurantItem img{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
 }

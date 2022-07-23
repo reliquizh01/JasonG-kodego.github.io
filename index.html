@@ -1,121 +1,438 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
 
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./CustomNav.css">
     <link rel="stylesheet" href="./index.css">
-</head>
-<body class="bg-success">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand text-center bg-warning" href="#">TAGEATS</a> -->
-          <a class="navbar-brand text-center bg-success tageatsLogoWideScreen" href="./AboutUs.html"> TAGEATS! </a>
-          <a class="navbar-brand text-center bg-success tageatsLogoMobile"> T! </a>
-          <!-- Searchbar Mobile Version -->
-          <div class="searchBarMobile">
-            <form class="d-flex " role="search">
+  </head>
+  
+  <body>
+    <nav class="row-lg navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand text-center bg-warning" href="#">TAGEATS</a> -->
+        <a class="navbar-brand text-center bg-success tageatsLogoWideScreen" href="./AboutUs.html"> TAGEATS! </a>
+        <a class="navbar-brand text-center bg-success tageatsLogoMobile"> T! </a>
+        <!-- Searchbar Mobile Version -->
+        <div class="searchBarMobile">
+          <form class="d-flex " role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning bg-warning" type="submit"><img src="./Images/search.svg" alt=""></button>
+          </form>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item bg-success">
+              <a class="nav-link text-center text-white" href="./Registration.html">JOIN US!</a>
+            </li>
+            <li class="nav-item bg-warning">
+              <a class="nav-link text-center text-white" href="./index.html">ORDER NOW!</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-center" href="./Feedback.html">Send Feedback</a></li>
+                <li><a class="dropdown-item text-center" href="#">Favorite Restaurants</a></li>
+                <li><hr class="dropdown-divider text-center"></li>
+                <li><a class="dropdown-item text-center" href="#">Surprise Me!</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link disabled text-center">Disabled</a>
+            </li> -->
+          </ul>
+          <!-- Searchbar WideScreen -->
+          <div class="searchBarWideScreen">
+            <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-warning bg-warning" type="submit"><img src="./Images/search.svg" alt=""></button>
+              <button class="btn btn-outline-warning bg-dark" type="submit">Search</button>
             </form>
           </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item bg-success">
-                <a class="nav-link text-center" href="./Registration.html">JOIN US!</a>
-              </li>
-              <li class="nav-item bg-warning">
-                <a class="nav-link text-center text-black" href="./Home.html">ORDER NOW!</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  More
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item text-center" href="./Feedback.html">Send Feedback</a></li>
-                  <li><a class="dropdown-item text-center" href="#">Favorite Restaurants</a></li>
-                  <li><hr class="dropdown-divider text-center"></li>
-                  <li><a class="dropdown-item text-center" href="#">Surprise Me!</a></li>
-                </ul>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled text-center">Disabled</a>
-              </li> -->
-            </ul>
-            <!-- Searchbar WideScreen -->
-            <div class="searchBarWideScreen">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-warning bg-dark" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </nav>
-
-
-    <div class="container-fluid h-100 pictureSlidesBackgroud">
-        <!-- Header -->
-        <div class="row bg-dark">
-            <div class="col-sm-11 col-sm-2 col-12 bg-dark">
-                <h1 class="headerMesgForTheDay">Weekly Restaurant Highlights!</h1>
-            </div>
-        </div>
-        <div class="container my-3">
-            <div class="row flex-nowrap restaurantWrapper row-cols-md-3 row-cols-sm-2 row-cols-1 g-1">
-                    <div class="card border-warning mb-5">
-                        <img src="https://placeimg.com/640/480/arch/sepia" class="card-img-top" alt="...">
-                        <div class="card-body cardBodyCustom">
-                        <h5 class="card-title text-center">Carinderia ng Bayan</h5>
-                        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="cardButtonCenter">
-                          <a href="./RestaurantPage.html" class="btn btn-warning text-center">Order</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card border-warning mb-5">
-                        <img src="https://placeimg.com/640/480/arch/grayscale" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title text-center">Ate Nina's Eatery</h5>
-                        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="cardButtonCenter">
-                          <a href="./RestaurantPage.html" class="btn btn-warning text-center">Order</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card border-warning mb-5">
-                        <img src="https://placeimg.com/640/480/arch/arch/sepia" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title text-center">Mang Kornel's Snackbar</h5>
-                        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="cardButtonCenter">
-                          <a href="./RestaurantPage.html" class="btn btn-warning text-center">Order</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card border-warning mb-5">
-                        <img src="https://placeimg.com/640/480/arch/arch/sepia" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title text-center">The Food Palaz</h5>
-                        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="cardButtonCenter">
-                          <a href="./RestaurantPage.html" class="btn btn-warning text-center">Order</a>
-                        </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
+      </div>
+    </nav>
     
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+    <header>
+      <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+          </ol>
+  
+          <div class="row-lg carousel-inner">
+            <a href="#" style="color: inherit;">
+              <div class="carousel-item active">
+                <div class="overlay-image" style="background-image:url(./Images/Hawkers.jpg)"></div>
+                <div class="carousel-item-container">
+                  <h2 class="carousel-item-header">Weekly Restaurant Highlights!</h2>
+                  <p class="carousel-item-paragraph">Checkout these restaurants specialties this week!</p>
+                </div>
+            </a>
+            </div>  
+            
+            <div class="carousel-item">
+              <a href="#" style="color: inherit;">
+                <div class="overlay-image" style="background-image:url(./Images/humblebeginnings.jpg)"></div>
+                <div class="carousel-item-container">
+                  <h2 class="carousel-item-header">Know their stories!</h2>
+                  <p class="carousel-item-paragraph">Their humble beginnings of serving you their finest, know more about your favorite restaurants!</p>
+                </div>
+              </a>
+            </div>
+  
+            <div class="carousel-item">
+              <a href="#" style="color: inherit;">
+                <div class="overlay-image" style="background-image:url(./Images/newEntries.jpg)"></div>
+                <div class="carousel-item-container">
+                  <h2 class="carousel-item-header">New Entries!</h2>
+                  <p class="carousel-item-paragraph">Looking for something new? a list of new restaurants in town!</p>
+                </div>
+              </a>
+            </div>
+  
+      </div>
+    </header>
+      
+    <div class="my-5" id="orderNow">
+      <a href="#orderNow" style="text-decoration: none; color:inherit;">
+        <h2 class="text-left">ORDER NOW <span>&#8594;</span></h2>
+      </a>
+
+      <div class="row-lg my-5 restaurantContainer">
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <div class="RestoInfo my-3">
+              <p class="my-1">Ate Niña's Eatery - Bangkal</p>
+              <p class="my-2">0.8km</p>
+            </div>
+            <p class="RestoPromo">20% discount</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <div class="RestoInfo my-3">
+              <p class="my-1">Lunch with Chef Zaku - Evangelista</p>
+              <p class="my-2">1.2km</p>
+            </div>
+            <p class="RestoPromo">FREE Delivery!</p>
+          </a>
+        </div>
+        
+        
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="my-5" id="orderAgain">
+      <a href="#orderAgain" style="text-decoration: none; color:inherit;">
+        <h2 class="text-left">ORDER AGAIN <span>&#8594;</span></h2>
+      </a>
+
+      <div class="row-lg my-5 restaurantContainer">
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="my-5" id="restoYouMayLike">
+      <a href="#restoYouMayLike" style="text-decoration: none; color:inherit;">
+        <h2 class="text-left">Restaurants you may like <span>&#8594;</span></h2>
+      </a>
+
+      <div class="row-lg my-5 restaurantContainer">
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+
+        <div class="restaurantItem mx-3">
+          <a href="./RestaurantPage.html" style="text-decoration: none; color:inherit; text-align: center;">
+            <img src="https://placeimg.com/640/480/arch" alt="">
+            <p for="">Ate Niña's Eatery - Bangkal</p>
+            <p>0.8km</p>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+
+    <footer class="bg-success">
+      <div class="col-4">
+        <h5>About Us</h5>
+        <ul>
+          <p>Mission</p>
+          <p>Vision</p>
+          <p>Address</p>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
